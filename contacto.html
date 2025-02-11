@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../AURUM/D1/Nueva carpeta/logo_verde.png">
+
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#servicios">Servicios</a>
+                <ul class="dropdown-menu">
+                    <!-- <li><a href="#estampados">Estampados y Sublimado</a></li>-->
+                    <li><a href="premium.html">Remeras Premium</a></li>
+                    <li><a href="intermedio.html">Remeras Intermedio Algodón</a></li>
+                    <!--<li><a href="buzos.html">Buzos con Capucha</a></li>-->
+                </ul>
+            </li>
+            <li><a href="descripcion.html">Descripcion</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <div class="contact-form">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/tu_codigo_aqui" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="tuemail@example.com" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+            <button type="submit"><a href="mailto:crisstouch@gmail.com">Enviar</a></button>
+        </form>
+    </div>
+    <footer id="footer">
+
+        <!-- <div id="adaptable_footer">
+    
+                
+            <div id="aur_presenta">
+                <h3>Sobre Aurum</h3>
+    
+                <p>
+                    En <strong>Aurum</strong> nos encanta formar parte de tu vestimenta. Tenemos gusto por los diseños
+                    personalizado y sabemos que cada persona es diferente. Es por eso que encontraras en nuestra marca
+                    distintos estilos de alta calidad.
+                </p>
+            </div>
+    
+            <div id="segundo_menu">
+                <h3>Informacion</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Nosotrso</a> </li>
+                    <li><a href="#"> Poliotica de Envios</a></li>
+                    <li><a href="#"> Politicas de Devolucion</a></li>
+                    <li><a href="#"> Garantia de nuestras prendas</a></li>
+                    <li><a href="#"> Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+    
+            </div>-->
+        <section class="contenedor">
+            <div id="aur_presenta">
+                <h3>Sobre Aurum</h3>
+                <p>
+                    En <strong>Aurum</strong> nos encanta formar parte de tu vestimenta. Tenemos gusto por los diseños
+                    personalizados y sabemos que cada persona es diferente. Es por eso que encontrarás en nuestra marca
+                    distintos estilos de alta calidad.
+                </p>
+            </div>
+
+            <div id="segundo_menu">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="descripcion.html">Nosotros</a></li>
+                    <li><a href="#">Política de Envíos</a></li>
+                    <li><a href="#">Políticas de Devolución</a></li>
+                    <li><a href="#">Garantía de nuestras prendas</a></li>
+                    <li><a href="contacto.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div id="aurum">
+            <p>aurum</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
