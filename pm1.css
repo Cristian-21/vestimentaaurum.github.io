@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: #0f0f0f;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background: #131313;
+    border-bottom: 1px solid #333;
+}
+
+.title-block h1 {
+    font-size: 42px;
+    margin: 0;
+    color: #dadada;
+}
+
+.title-block p {
+    font-size: 16px;
+    color: #9a9a9a;
+    margin-top: 6px;
+}
+
+.header-image {
+    width: 250px;
+    height: 150px;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 14px;
+    font-style: italic;
+}
+
+nav {
+    background: #0d0d0d;
+    padding: 15px 60px;
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    color: #e6e6e6;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 50px 60px;
+    max-width: 900px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ececec;
+}
+
+p {
+    margin-bottom: 18px;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+}
+#pm1 {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+#pm2 {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    header img {
+        margin: 1rem 0 0 0;
+        max-width: 150px;
+    }
+
+    nav a {
+        margin-left: 0.75rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    min-width: 150px;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #ccc;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+footer {
+    text-align: center;
+    background-color: #444;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

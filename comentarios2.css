@@ -1,0 +1,29 @@
+.comentarios-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+}
+
+.comentarios-container input,
+.comentarios-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  background: #222;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 6px;
+}
+
+.comentarios-container button {
+  padding: 10px 20px;
+  background: #0f62fe;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

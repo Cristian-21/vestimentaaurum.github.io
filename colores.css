@@ -1,0 +1,118 @@
+/* MODO CLARO */
+body.light-mode {
+    background: #fafafa;
+    color: #222;
+}
+
+body.light-mode h2 {
+    color: #222;
+}
+
+body.light-mode header,
+body.light-mode nav a,
+body.light-mode footer {
+    color: #222;
+}
+
+body.light-mode .dropdown-content {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+body.light-mode nav a:hover {
+    color: #2c5a5a;
+}
+
+/* Dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #ccc;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+
+.dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Contenido */
+.content {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 4rem;
+    color: #aaa;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* Botón modo claro/oscuro */
+#themeToggle {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ddd;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+
+#themeToggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+body.light-mode #themeToggle {
+    color: #222;
+    border-color: #666;
+}
+
+body.light-mode #themeToggle:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    header img {
+        margin-top: 1rem;
+        max-width: 150px;
+    }
+}
